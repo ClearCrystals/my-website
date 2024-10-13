@@ -1,0 +1,27 @@
+# Use an official Node.js runtime as the base image
+FROM node:18-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json first to leverage Docker caching
+COPY package.json package-lock.json ./
+
+# Install dependencies
+RUN npm install
+
+# Install tailwindcss and postcss globally
+RUN npm install -D tailwindcss postcss autoprefixer
+
+# Generate Tailwind configuration files (optional if already present)
+RUN npx tailwindcss init
+
+# Copy the rest of your application code
+COPY . .
+
+# Expose the port that the app will run on
+EXPOSE 5173
+
+# Command to run the application in development mode
+CMD ["npm", "run", "dev", "--", "--host"]
+

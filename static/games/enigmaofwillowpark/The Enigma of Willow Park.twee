@@ -1,0 +1,602 @@
+:: StoryTitle
+The Enigma of Willow Park
+
+
+:: StoryData
+{
+  "ifid": "2067794E-CA99-48AA-8134-5B5E0F8BE3C4",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: \ Back to the Square {"position":"375,625","size":"100,100"}
+Back to the Square
+
+<div class="passage">
+You return to the now statue-less town square. It's quieter than usual, the townsfolk speaking in hushed tones about the morning's strange occurrence. You notice something peculiar: faint tire tracks near the pedestal, partially swept away by the morning's hustle.
+
+Near the base where the statue stood, you find small fragments of stone. Perhaps overlooked by the local police, they could be remnants of the statue or something else entirely.
+
+You hear a almost a whisper from the breeze, "Find the item, find the room of secrets and carry the burden."
+</div><div class="links">
+[[Collect samples of the stone -> Gathering Evidence]]
+You carefully gather the stone fragments to examine them for any sort of clue that they might reveal about the statue’s disappearance.
+
+[[Follow the tire tracks -> The Mysterious Vehicle]]
+The tracks may lead to the vehicle that was used to transport the statue. You decide to follow them, hoping they haven't been completely obscured by the day's traffic.
+
+(if: $CrestsMeaningRead and $RoomsSecretsRead and $BurdenOfKnowledgeRead)[
+    [[Uncover the Secrets->The Final Puzzle]]
+]
+</div>
+
+
+:: \ Burden of Knowledge {"position":"1000,1075","size":"100,100"}
+Burden of Knowledge
+
+<div class="passage">
+As Jamie sifts through the mountain of evidence collected, the gravity of their discoveries weighs heavily upon them. The "Heart of Willow" is more than a mere relic; it's a symbol of unity that has kept the town's discord at bay for generations. To unveil its secrets could shatter the peace, yet its significance calls for truth to prevail. Jamie's next steps are crucial, as they hold the power to either uphold or unravel the legacy of Willow Park.
+</div><div class="links">
+[[Confide in the town historian for guidance -> The Historian's Insight]]
+Seeking wisdom, Jamie turns to the town historian, who may provide the context needed to make an informed decision about revealing the Heart's secrets.
+
+[[Revisit the square to re-evaluate the statue's original location -> Back to the Square]]
+Jamie returns to the town square for inspiration, hoping that a fresh look at the statue's pedestal may offer new insight into the decision they face.
+</div>
+(set: $BurdenOfKnowledgeRead to true)
+
+
+:: \ Decoding the Clue {"position":"0,750","size":"100,100"}
+Decoding the Clue
+
+<div class="passage">
+Jamie sits at the old oak table in the station's corner, the numbers reflecting in the gleam of the overhead lights. With a furrowed brow, they map the numbers to the locations on the map, soon realizing they correspond to the dates of the town's historic events. It's a timeline... but for what?
+
+Suddenly, it clicks. The dates mark the anniversaries of the statue's unveiling each decade. But there's one date that stands out – today's date, which hasn't been written down yet. Could the statue have been scheduled for something today?
+</div><div class="links">
+[[Attend today's town event -> The Town Event]]
+Jamie decides to attend the town's event, suspecting that the key's role or the statue's disappearance will be revealed there.
+
+[[Cross-reference dates with the library -> The Archive Search]]
+Before heading to any event, Jamie opts to return to the library to cross-reference these dates with historical events for more context.
+</div>
+
+
+:: \ Gathering Evidence {"position":"275,775","size":"100,100"}
+Gathering Evidence
+
+<div class="passage">
+Armed with a plastic baggie from the nearby diner, Jamie collects the stone fragments. They're old, certainly as old as the statue, but among them is a piece that's different: a fragment with a carved symbol that doesn't match the aesthetic of Sir Reginald's statue.
+
+It's a clue, possibly a piece of the stolen item itself or a marker left by those responsible. The symbol seems to be a crest of sorts, possibly related to the town's founders.
+</div><div class="links">
+[[Research the symbol -> The Crest's Meaning]]
+Determined to decipher the meaning behind the crest, Jamie heads to the town hall's records department to find any matching symbols.
+
+[[Show the fragment to local historians -> The Historian's Insight]]
+Jamie decides to consult with the town's historian, Mr. Edwards, who has an encyclopedic knowledge of Willow Park’s founding families.
+</div>
+
+
+:: \ Interviewing the Witness {"position":"150,750","size":"100,100"}
+Interviewing the Witness
+
+<div class="passage">
+The witness, an elderly man named Mr. Henley, sits nervously twiddling his thumbs as Jamie approaches. His eyes are tired, but there's a sharpness to them as he recounts the shadowy figure's hurried movements.
+
+"It was strange," Mr. Henley whispers, "They moved with purpose, yet hesitated, like they were waiting for something... or someone."
+
+Jamie's mind races. Was the figure waiting for an accomplice, or could it be that they were waiting for the cover of an event to hide their crime?
+</div><div class="links">
+[[Ask about any accomplices -> The Accomplice Theory]]
+Jamie probes further about the possibility of an accomplice, looking for a description that might match townsfolk or visitors.
+
+[[Investigate the day's events -> The Event Connection]]
+The mention of waiting prompts Jamie to investigate any events in the town that day that the figure might have been timing their actions around.
+</div>
+
+
+:: \ Project the Secret {"position":"300,1450","size":"100,100"}
+Protect the Secret
+<div class="passage">
+The weight of the truth is heavy, and Jamie realizes that some things are better left untouched. With the Heart of Willow secure, Jamie approaches the leadership of Willow Park—the direct descendants of the founders and, unknowingly to many, the current members of the secret society. Jamie expresses a desire to join them, to protect the town as they have for generations.
+
+Under the moonlit sky, in a quiet ceremony away from prying eyes, Jamie is initiated into the ranks of the secret keepers. As they pledge to safeguard the mysteries of Willow Park, Jamie feels a sense of purpose envelop them—a guardian of the past and a silent architect of the future.
+</div>
+You Win.
+Thanks for Playing!
+
+Credits:
+Grace Steinmetz
+<div class="links">
+[[Play Again ->Intro]]
+</div>
+
+
+:: \ Reveal the Truth {"position":"175,1450","size":"100,100"}
+Revealing the Truth
+
+<div class="passage">
+In a bold move that will forever alter the course of Willow Park's history, Jamie decides it's time for the truth to come to light. No more secrets, no more whispers behind closed doors. It's during the annual town event, with every eye upon them, that Jamie steps forward. With the Heart of Willow in hand and a crowd that has swelled with anticipation, Jamie begins to unveil the mysteries that have been shrouded in silence for far too long.
+
+The crowd listens in stunned silence as Jamie speaks of Sir Reginald's Secret, the Secret Society's Trail, and the true purpose behind the Statue's Secret. They reveal how each part of the town's history, from the Archive Search to the Historian's Insight, has been influenced by the secret society's guiding hand.
+
+As Jamie concludes, presenting the evidence and the artifacts they've uncovered, there's a palpable shift in the air. Some are shocked, some are in denial, but many are in awe of the depth of their town's hidden legacy.
+</div>
+
+You Win.
+Thanks for Playing!
+
+Credits:
+Grace Steinmetz
+<div class="links">
+[[Play Again ->Intro]]
+</div>
+
+
+:: \ Seeking the Lock {"position":"600,750","size":"100,100"}
+Seeking the Lock
+
+<div class="passage">
+With the key's weight in their pocket, Jamie wanders through Willow Park, feeling the town's eyes on them. They’re drawn to the historical society building, a place said to hold generations of secrets.
+
+Inside, Jamie finds the lock hidden in plain sight — a decorative piece on the portrait of Sir Reginald himself. The key fits, and with a turn, a hidden drawer pops open, revealing a set of old letters.
+</div><div class="links">
+[[Read the letters -> Sir Reginald’s Correspondence]]
+The letters might hold the information Jamie needs to understand why the statue was taken and what Sir Reginald’s "greatest treasure" might be.
+
+[[Search for more hidden compartments -> The Room’s Secrets]]
+Encouraged by this discovery, Jamie examines the room further for more hidden compartments or clues.
+</div>
+
+
+:: \ Sir Reginald’s Correspondence {"position":"487.5,1125","size":"100,100"}
+Sir Reginald’s Correspondence
+
+<div class="passage">
+Jamie carefully reads the old letters, the ink faded but legible. They reveal Sir Reginald’s instructions to his descendants, to protect the “Heart of Willow” at all costs, even to move it should the town ever face a threat. It seems the statue's disappearance is connected to these old letters.
+</div><div class="links">
+[[Inform the descendants -> The Hawthorn Connection]]
+Believing that the descendants should be made aware of this development, Jamie decides to speak with them directly.
+
+[[Investigate potential threats to the town -> The Event Connection]]
+Jamie reflects on recent events in the town, wondering if the statue was moved because a threat had been perceived.
+</div>
+
+
+:: \ Sir Reginald’s Secrets {"position":"1100,725","size":"100,100"}
+<div class="passage">
+
+The diary's pages are a gateway to Sir Reginald’s inner thoughts, and within them, Jamie finds numerous entries detailing clandestine meetings and cryptic references to protecting something of great value. It seems the statue was not the only secret Sir Reginald kept.
+
+On one page, a pressed flower marks a passage that stands out: "The heart lies guarded by the watcher in the stone, visible only to those who truly see." Below the text, a sketch of the town square with a particular cobblestone circled stirs Jamie’s curiosity.
+</div><div class="links">
+[[Decide to do some digging around yourself -> Back to the Square]]
+
+[[Consult with a historian -> The Historian's Insight]]
+Before venturing out, Jamie decides it would be wise to consult with a local historian about the passage to glean any additional insight.
+</div>
+
+
+:: \ The Accomplice Theory {"position":"150,1050","size":"100,100"}
+The Accomplice Theory
+
+<div class="passage">
+After speaking with Mr. Henley, Jamie is convinced that the thief might have had an accomplice. They decide to track the movements of the townspeople leading up to the disappearance. A review of security footage from local businesses could reveal repeated patterns or meetings between suspects.
+</div><div class="links">
+[[Request security footage -> Gathering Evidence]]
+Convinced this is the right move, Jamie heads to the police station to request access to the security footage from the days leading up to the theft.
+
+[[Tail suspected individuals -> Who Were They?]]
+Instead of involving the police, Jamie opts for discreetly tailing a few individuals who have been acting unusually around the time of the statue's disappearance.
+</div>
+
+
+:: \ The Archive Search {"position":"75,875","size":"100,100"}
+The Archive Search
+
+<div class="passage">
+Inside the dimly lit archive room, Jamie combs through the dusty ledgers and frayed maps of Willow Park. Each document whispers tales of the past, but one, an old planning blueprint, reveals a curious addition to the town square not seen today—a small, ornate fountain that once stood opposite the statue. Jamie wonders if it could be linked to the statue’s disappearance or the “Heart of Willow.”
+</div><div class="links">
+[[Compare blueprint to current square -> Back to the Square]]
+Jamie decides to compare the old blueprint with the current layout of the town square, looking for discrepancies or hidden structures.
+
+[[Investigate the fountain's history -> The Statue’s Secrets]]
+Curiosity piqued, Jamie delves deeper into the archive, seeking information about the fountain and its connection to Sir Reginald's statue.
+</div>
+
+
+:: \ The Crest's Meaning {"position":"375,1250","size":"100,100"}
+The Crest's Meaning
+
+<div class="passage">
+Amidst the artifacts and old documents, a recurring crest appears — a symbol that adorns the base of the missing statue. This crest, Jamie realizes, is not just decorative; it signifies the founding values of Willow Park, the core of its identity. Understanding its full meaning could be the key to unlocking the secret locations and intentions of those who removed the "Heart of Willow."
+</div><div class="links">
+[[Consult the town archives for information on the crest -> The Archive Search]]
+Jamie decides that a deeper historical investigation is required and heads to the town archives, certain that the records will hold the explanation of the crest's significance.
+
+[[Return to the square to compare the crest with other town symbols -> Back to the Square]]
+With a keen eye for detail, Jamie goes back to the town square, where other symbols similar to the crest might be found, providing clues to its true meaning.
+</div>
+(set: $CrestsMeaningRead to true)
+
+
+:: \ The Event Connection {"position":"275,1075","size":"100,100"}
+The Event Connection
+
+<div class="passage">
+As the town event carries on, Jamie notices how certain areas of the square are strictly off-limits, guarded by people who don't seem like typical event staff. They recall the timeline puzzle, the suspicious activities, and now this anomaly. There must be a connection.
+</div><div class="links">
+[[Infiltrate the restricted area -> The Mysterious Vehicle]]
+Using the crowd as cover, Jamie sneaks towards the restricted area, determined to discover why it's being guarded so closely.
+
+[[Distract the guards to investigate -> The Secret Society’s Trail]]
+Jamie plans a distraction to draw the guards away from the restricted area, hoping to find a connection to the secret society.
+</div>
+
+
+:: \ The Hawthorn Connection {"position":"650,950","size":"100,100"}
+The Hawthorn Connection
+
+<div class="passage">
+Jamie approaches Eloise Hawthorn, Sir Reginald’s last known descendant, who resides in an old manor on the outskirts of Willow Park. She is notoriously private, but perhaps she possesses knowledge that could crack the case wide open.
+</div><div class="links">
+[[Request Eloise’s assistance -> The Archive Search]]
+Jamie asks for Eloise’s help in accessing family records, hoping they contain the key to solving the mystery.
+
+[[Present the found evidence -> Sir Reginald’s Correspondence]]
+Jamie lays out the evidence found so far, hoping to gain Eloise’s trust and insight into Sir Reginald’s true intentions.
+
+</div>
+
+
+:: \ The Heart of Willow {"position":"950,775","size":"100,100"}
+<div class="passage">
+
+Jamie's fingers skim over the pages of another tome detailing Sir Reginald Willow’s philanthropic exploits when a footnote catches their eye. It speaks of a cherished jewel, dubbed "The Heart of Willow," a gemstone placed within the statue at its unveiling as a symbol of the town's enduring spirit.
+
+This revelation casts the statue in a new light — not just a landmark, but a vessel for something far more precious. The "Heart of Willow" must be what the thief was truly after.
+</div><div class="links">
+[[Inform the police -> The Investigation Begins]]
+Jamie decides to take this information to Officer Mills. It's crucial for the police to know what was really stolen.
+
+[[Keep it secret -> Burden of Knowledge]]
+Wary of causing a panic or tipping off the thief, Jamie decides to keep this discovery to themselves while they continue to investigate discreetly.
+</div>
+
+
+:: \ The Historian's Insight {"position":"275,900","size":"100,100"}
+The Historian's Insight
+
+<div class="passage">
+Mr. Edwards, the town historian, strokes his beard thoughtfully as Jamie inquires about "The Watcher in the Stone." He recounts an old town legend of a guardian spirit, believed to protect Willow Park's deepest secrets. The connection to the statue and the key could not be mere coincidence.
+</div>
+<div class="links">
+[[Locate "The Watcher" based on legend -> Back to the Square]]
+With the legend as a guide, Jamie sets out to locate this “Watcher,” a potential key to unraveling the town’s mysteries.
+
+[[Cross-reference legend with historical records -> The Archive Search]]
+Jamie isn't one to rely on folklore alone and decides to cross-reference the legend with historical records for any tangible evidence.
+</div>
+
+
+:: \ The Investigation Begins {"position":"200,625","size":"100,100"}
+The Investigation Begins
+
+<div class="passage">
+Officer Mills raises an eyebrow, considering your offer. "Well, I suppose there's no harm in letting you take a gander at the evidence we've collected so far," he relents, leading you to a back room cluttered with files and random objects related to ongoing cases.
+
+Among the assortment, you find a folder marked "Statue Theft." Inside, there's a collection of photographs, witness statements, and a map of the town square. A witness claims to have seen a shadowy figure near the statue the night before it disappeared. The evidence is scant, but your eyes are drawn to a series of numbers scribbled on the back of the map.
+</div><div class="links">
+[[Try to decode the numbers -> Decoding the Clue]]
+The numbers must mean something. You sit down with the map and start to decipher the potential code.
+
+[[Ask the witness more questions -> Interviewing the Witness]]
+You decide to talk directly to the witness. Perhaps there's more to their story than what's noted down here.
+</div>
+
+
+:: \ The Library {"position":"850,475","size":"100,100"}
+The Library
+
+<div class="passage">
+The library of Willow Park is an old, ivy-covered building, filled with the scent of aged paper and whispers of bygone eras. Ms. Wren, the librarian, with her glasses perched on the bridge of her nose, offers a silent nod as you walk past, absorbed in her book. You head to the local history section, where the past of Willow Park lies in wait.
+
+As you pore over the dusty tomes, the key seems to pulse with a strange energy. It’s as if it belongs to another time, a piece of a puzzle long since scattered. Your eyes catch a footnote in a book about town landmarks, mentioning a cryptic society that influenced the town's development. Could there be a connection to the statue's disappearance?
+</div><div class="links">
+[[Look into the secret society -> The Secret Society’s Trail]]
+Curiosity piqued, you delve deeper into the lore of this secret society, hoping to find a clue related to the peculiar key.
+
+[[Examine other items related to the statue -> The Statue’s Secrets]]
+The key must have something to do with the statue itself. You decide to focus on materials directly related to Sir Reginald Willow and his legacy.
+</div>
+
+
+:: \ The Mysterious Vehicle {"position":"450,775","size":"100,100"}
+The Mysterious Vehicle
+
+<div class="passage">
+The tire tracks lead away from the square, weaving through the back streets before coming to an abrupt end near the old Willow warehouse. It's been abandoned for years, but today, the padlock on the gate looks freshly broken.
+
+Inside the warehouse is a veritable trove of artifacts and old town relics. And there, sitting atop a dusty crate, is another statue — not Sir Reginald's, but similar in style. Could there be a collection of these statues, and if so, to what purpose?
+</div><div class="links">
+[[Investigate the warehouse -> The Warehouse Secrets]]
+Jamie enters the warehouse, ready to sift through the past and uncover the secrets it holds regarding the statues.
+
+[[Alert the police to the warehouse -> The Investigation Begins]]
+Feeling that this discovery is too significant to tackle alone, Jamie decides to call Officer Mills and inform him about the warehouse find.
+
+</div>
+
+
+:: \ The Police Station {"position":"375,475","size":"100,100"}
+The Police Station
+
+<div class="passage">
+The police station of Willow Park stands as a stark contrast to the gentle charm of the town, its modern architecture a reminder of the outside world. The interior is abuzz with the mundane chaos of small-town law enforcement. Officer Mills, a stout man with a face as readable as an open book, greets you with a mixture of surprise and intrigue.
+
+“A key, you say? Right where old Reggie’s statue stood?” he muses, turning the key over in his hands. “We’ll have to look into this. Could be a prank, but you never know these days.”
+
+He assures you they’ll get to the bottom of it, but as you turn to leave, you can't help but feel the slow churn of the wheels of justice might not be fast enough. Plus, there’s a lingering sense that there’s more to this than meets the eye.
+</div><div class="links">
+[[Offer to help with the investigation -> The Investigation Begins]]
+You suggest that you might be of assistance, given your knack for solving puzzles and your intimate knowledge of Willow Park’s history.
+
+[[Decide to do some digging around yourself -> Back to the Square]]
+Feeling unconvinced that the police will give the case the attention it deserves, you decide it's best to visit the town square again and look for clues they might have missed.
+</div>
+
+
+:: \ The Room’s Secrets {"position":"625,1250","size":"100,100"}
+The Room’s Secrets
+
+<div class="passage">
+In the heart of the library, there’s a room filled with Sir Reginald’s personal effects. Among them, Jamie finds a hidden compartment in his desk that contains a strange device. It appears to be a custom-made viewer, possibly for looking at something that isn’t readily visible to the naked eye.
+</div><div class="links">
+[[Use the viewer in the square -> The Statue’s Secrets]]
+Jamie takes the viewer to the town square, hoping to see the statue and its surroundings through the eyes of Sir Reginald himself.
+
+[[Examine Sir Reginald’s personal effects -> Sir Reginald’s Correspondence]]
+Before leaving, Jamie decides to examine Sir Reginald’s personal effects more thoroughly, believing there may be more clues hidden among his belongings.
+</div>
+(set: $RoomsSecretsRead to true)
+
+
+:: \ The Secret Society’s Trail {"position":"750,625","size":"100,100"}
+The Secret Society's Trail
+
+<div class="passage">
+Deep within the shelves of local history, you find a book with a worn leather cover, "The Guardians of Willow's Legacy." It speaks of a clandestine group formed during the town’s founding. You can't help but notice the symbol on the book's spine matches the intricate design of the key.
+
+Flipping through the pages, you come across a chapter that references secret meetings by moonlight and mentions the founder’s “greatest treasure.” Beside the text is a drawing of a lock, eerily similar to the one your key would fit.
+</div><div class="links">
+[[Search for the lock -> Seeking the Lock]]
+Convinced the key must open something in town, you begin your search for the lock that matches the key.
+
+[[Research the society members -> Who Were They?]]
+You decide to find out more about the members of this society. Maybe their descendants are still in town and know something.
+</div>
+
+
+:: \ The Statue’s Secrets {"position":"975,575","size":"100,100"}
+The Statue’s Secrets
+
+<div class="passage">
+The section on Sir Reginald Willow is extensive, but among the volumes, a small journal tucked away seems out of place. It's a diary belonging to Sir Reginald himself, detailing his thoughts and daily activities. A bookmarked page makes mention of a "safeguard against those who would seek the Willow’s heart."
+
+The term "Willow’s heart" jumps out at you — a term you've never heard before in relation to the statue. Could the statue have contained something more than just symbolic value?
+</div><div class="links">
+[[Investigate the term "Willow’s heart" -> The Heart of Willow]]
+You need to understand what "Willow’s heart" refers to. It could be the key (both figuratively and literally) to solving this mystery.
+
+[[Examine the diary more thoroughly -> Sir Reginald’s Secrets]]
+Perhaps there are more clues within the diary’s pages. You decide to examine it more closely for any hidden messages or codes.
+</div>
+
+
+:: \ The Town Event {"position":"0,1000","size":"100,100"}
+The Town Event
+
+<div class="passage">
+The town square buzzes with anticipation for the annual Founder's Day fair. As Jamie mingles through the crowd, they can't help but notice the empty plinth where the statue once stood, now draped with a banner reading "The Spirit of Willow Endures." Could the event be a cover for the theft, or perhaps a strategic time chosen by the thief?
+</div><div class="links">
+[[Volunteer at the event to gather information -> Interviewing the Witness]]
+To get closer to the townsfolk and possibly overhear conversations about the statue, Jamie volunteers at the event, using this position to gently probe for clues.
+
+[[Look around at the Town Event -> The Event Connection]]
+Look around so more and notice things that are out of place.
+</div>
+
+
+:: \ The Warehouse Secrets {"position":"425,950","size":"100,100"}
+The Warehouse Secrets
+
+<div class="passage">
+The abandoned warehouse is a labyrinth of forgotten memorabilia. Amidst the relics, Jamie discovers shipping manifests dating back to Sir Reginald’s time, all addressed to a secret society. The latest entry corresponds to the date of the statue’s disappearance.
+</div><div class="links">
+[[Trace the society's shipments -> The Secret Society’s Trail]]
+Jamie decides to follow the trail of the society's shipments, believing it will lead them to the current members and their motives.
+
+[[Examine the warehouse for more clues -> Seeking the Lock]]
+Convinced there’s more to be found, Jamie searches the warehouse for a lock that might fit the mysterious key found at the statue's base.
+</div>
+
+
+:: \ Watching the Watchers {"position":"850,975","size":"100,100"}
+Watching the Watchers
+
+<div class="passage">
+From a discreet vantage point, Jamie observes the square, their eyes darting from the bustling crowd to the isolated figures lingering on the fringes. Among the townsfolk, certain individuals stand out — they don't interact or revel in the festivities, they're watching, taking notes, and whispering into hidden earpieces. It's clear they're watching for someone, or something. Is it the Heart of Willow they're after, or are they guarding against its discovery?
+</div><div class="links">
+[[Approach the watchers to glean information -> Interviewing the Witness]]
+Jamie musters up the courage to approach the watchers. Acting nonchalant, they aim to strike up a conversation that might inadvertently lead to a slip of the tongue or a revelation.
+
+[[Tail the watchers after the event -> The Mysterious Vehicle]]
+When the event concludes, Jamie follows the watchers from a safe distance. They're convinced that tracking them will lead to a significant breakthrough in the case, perhaps linked to the missing statue or the secret society.
+</div>
+
+
+:: \ Who Were They? {"position":"725,750","size":"100,100"}
+<div class="passage">
+
+At the library, Jamie uncovers a list of names associated with "The Guardians of Willow's Legacy." Cross-referencing these with the current town records shows several matches — descendants of the original society members.
+
+One name stands out: Eloise Hawthorn, the current mayor’s assistant, known for her passion for the town's history and her reclusive tendencies.
+</div><div class="links">
+[[Approach Eloise Hawthorn -> The Hawthorn Connection]]
+Jamie decides to speak with Ms. Hawthorn directly, believing she may unknowingly hold key information about the statue.
+
+[[Surveillance of descendants -> Watching the Watchers]]
+Instead of confronting the descendants, Jamie opts for discrete observation, hoping to catch a sign of secretive behavior or gatherings.
+</div>
+
+
+:: Intro {"position":"350,300","size":"100,100"}
+
+''The Enigma of Willow Park.''
+
+By Grace Steinmetz
+
+<div class="passage">
+The quaint town of Willow Park, nestled between the embrace of whispering willows and the gentle hum of the Silverpine River, has always been your little slice of paradise. Streets lined with family-run shops, a small museum boasting odd local artifacts, and the town square with its legendary statue of the founder, Sir Reginald Willow, all paint a picture of a community untouched by time.
+
+It's a sunny Tuesday morning, and the air carries the sweet scent of Mrs. Davenport's bakery, mingling with the faintest whispers of mystery that seem to emanate from the cobblestones themselves. You're walking Max, your loyal golden retriever, through the square when you notice something amiss. The statue of Sir Reginald, a fixture as reliable as the old clock tower, is gone. In its place lies a single, ornate key — glinting as if to catch your eye among the morning dew.
+
+As you stand there, key in hand, you realize that the serenity of Willow Park has been breached by an unknown enigma. Will you rush to the police with this peculiar find, or will the sleuth in you demand to unravel this mystery on your own?
+
+In the back of your mind, a voice whispers that whatever choice you make, Willow Park and its secrets will never be the same again.
+
+</div>
+<div class="links">
+[[Hand the key to the police -> The Police Station]]
+You decide to trust the authorities with the key, hoping that their resources will shed light on the situation quickly.
+
+[[Investigate on your own -> The Library]]
+The thrill of mystery tugs at your senses. You pocket the key, your mind racing with possibilities as you head towards the town library, a place where many secrets have been uncovered between the pages of history.
+
+</div>
+
+(set: $CrestsMeaningRead to false)
+(set: $RoomsSecretsRead to false)
+(set: $BurdenOfKnowledgeRead to false)
+
+
+:: The Final Puzzle {"position":"175,1325","size":"100,100"}
+<div class="passage">
+As Jamie stands in the now-familiar center of Willow Park, the pieces of the puzzle they've been collecting finally begin to align. Each encounter, each discovery, each secret unearthed through the tireless journey comes together to form a tapestry of truth that's been interwoven with the history of Willow Park for generations.
+
+The Crest's Meaning, as it turns out, was not just an emblem of the town's founding families; it was a map in itself, symbolizing locations where the Heart of Willow could unlock secrets hidden in plain sight.
+
+The Room's Secrets revealed that Sir Reginald, a figure prominent in the town's lore, was a member of the secret society tasked with protecting these truths, with clues left behind in his correspondence.
+
+The Burden of Knowledge was the understanding that the truth might sometimes be too much for a town steeped in tradition and routine. Jamie grapples with the potential disruption their revelations could cause in the fabric of the community.
+
+The Archive Search provided historical context, showing the relationships between the town's landmarks and the society's activities, suggesting that their influence was designed to maintain the town's prosperity and unity.
+
+The Historian's Insight unveiled the secret society's consistent guidance over the years, suggesting that their intentions were to protect rather than to control, guiding Jamie to view them not as adversaries but as potential allies.
+
+The Hawthorn Connection led Jamie to discover a lineage that connected current town members to the secret society, suggesting that the town's leadership may still be involved in this clandestine group.
+
+Sir Reginald's Correspondence uncovered plans that detailed the locations of other significant artifacts and the society's careful manipulation to keep them from falling into the wrong hands.
+
+In Unveiling the Truth, Jamie must decide how to handle the delicate balance of power and the knowledge that could either elevate the town to new heights or plunge it into chaos.
+
+Finally, The Burden of Knowledge becomes a crossroads for Jamie: to reveal all and potentially upend the tranquility of Willow Park or to become a new guardian of its secrets, preserving the status quo but continuing the legacy of the secret society.
+
+With the Heart of Willow in their possession, Jamie understands it's not just a physical object but a symbol of the trust and responsibility inherited from those who have long watched over the town. It's their choice now — reveal all and change the course of Willow Park forever or protect its people by keeping the secret, becoming a part of the very society they once sought to expose.
+</div><div class="links">
+[[Reveal the Truth -> Reveal the Truth]]
+Jamie could bring the truth to light during the upcoming town event, risking the peace but bringing transparency.
+
+[[Protect the Secret -> Project the Secret]]
+Alternatively, Jamie could become the secret keeper, ensuring the society's continued influence and the town's steady future.
+</div>
+
+
+:: StoryScript [script]
+window.typeWriter = function (selector, speed, callback) {
+  var textElement = document.querySelector(selector);
+  var linksElement = document.querySelector('.links'); // Select the links container
+
+  // Initially hide the links section
+  if (linksElement) {
+    linksElement.style.display = 'none';
+  }
+
+  var content = textElement.textContent;
+  var i = 0;
+  textElement.textContent = '';
+  var timer;
+
+  // Function to finish the typing effect immediately and remove the listener
+  function completeTyping() {
+    clearInterval(timer);
+    textElement.textContent = content; // Show all content at once
+    document.removeEventListener('keydown', checkSpaceBar); // Remove the event listener first
+    if (callback && typeof(callback) === 'function') {
+      callback(); // Then call the callback function
+    }
+  }
+
+  // Function to check for the space bar press
+  function checkSpaceBar(event) {
+    if (event.code === 'Space') {
+      completeTyping();
+      event.preventDefault(); // Prevent any default behavior triggered by the space bar
+    }
+  }
+
+  timer = setInterval(function () {
+    if (i < content.length) {
+      textElement.textContent += content.charAt(i);
+      i++;
+    } else {
+      completeTyping();
+    }
+  }, speed);
+
+  // Listen for the space bar keydown event
+  document.addEventListener('keydown', checkSpaceBar);
+};
+
+// Function to show the links and reinitialize observer after the typewriter effect
+function showLinks() {
+  var linksElement = document.querySelector('.links');
+  if (linksElement) {
+    linksElement.style.display = 'block'; // Show the links
+  }
+  initObserver(); // Call initObserver to watch for the next passage
+}
+
+function initObserver() {
+  var observer = new MutationObserver(function (mutations, obs) {
+    var passage = document.querySelector('.passage');
+    if (passage && !passage.getAttribute('data-typing')) { // Check if the typing hasn't been applied
+      passage.setAttribute('data-typing', 'true'); // Mark it as typing in progress
+      window.typeWriter('.passage', 20, showLinks); // Pass the showLinks function as a callback
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+}
+
+// Initial call to set up the observer
+initObserver();
+
+
+:: StoryStylesheet [stylesheet]
+a.internalLink, a.externalLink {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a.internalLink:hover, a.externalLink:hover {
+  color: #0052a3;
+  text-decoration: none;
+}

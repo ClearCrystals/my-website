@@ -21,7 +21,7 @@
   <div class="absolute left-[40%] top-0 h-screen w-[6%] flex flex-col justify-between hidden lg:flex z-10">
     <!-- Top Horizontal Line -->
     <div class="relative w-full h-[0.8rem] bg-white mt-40">
-      <div class="absolute left-[-0.5rem] w-[1rem] h-full bg-black"></div> <!-- Black cutoff effect -->
+      <div class="absolute left-[-1rem] w-[1rem] h-full bg-black"></div> <!-- Black cutoff effect -->
     </div>
     <!-- Vertical Line -->
     <div class="relative w-full h-full">
@@ -29,7 +29,7 @@
     </div>
     <!-- Bottom Horizontal Line -->
     <div class="relative w-full h-[0.8rem] bg-white mb-32">
-      <div class="absolute left-[-0.5rem] w-[1rem] h-full bg-black"></div>
+      <div class="absolute left-[-1rem] w-[1rem] h-full bg-black"></div>
     </div>
   </div>
 

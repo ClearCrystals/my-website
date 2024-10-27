@@ -2,7 +2,7 @@
     // You can add any necessary script here if needed later
 </script>
 
-<footer class="bg-black text-white py-8 px-4 sm:px-8">
+<footer class="bg-black text-white py-8 px-4 sm:px-8 z-40 relative">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
     <!-- About and Navigation -->
     <div>

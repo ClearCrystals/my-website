@@ -7,8 +7,8 @@
   import '../app.css';
 </script>
 
-<!-- Black Divider on the Left, hidden on small screens -->
-<div class="w-[11%] min-h-screen bg-black fixed top-0 left-0 z-30 hidden lg:block"></div>
+<!-- Black Divider on the Left, hidden on small screens, and doesn't cover footer -->
+<div class="w-[11%] lg:h-screen bg-black fixed top-0 left-0 z-30 hidden lg:block"></div>
 
 <!-- Main Content -->
 <div class="flex flex-col lg:flex-row min-h-screen justify-center items-center relative text-center lg:text-left bg-black">

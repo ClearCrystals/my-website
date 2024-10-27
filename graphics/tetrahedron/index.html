@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebGL cube drawn with indexed vertex list</title>
+    <style>
+      html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      #mycanvas {
+          height: 900px;
+          width: 900px;
+          border: none;
+      }
+      #mycanvas2 {
+          height: 900px;
+          width: 900px;
+          border: none;
+      }
+      .slider {
+          width: 80%; /* Adjust the width of the sliders */
+          margin: 10px 0;
+      }
+      
+  </style>
+  </head>
+
+  <body>
+    <!-- Hidden images for WebGL texture use -->
+    <img id="image1" src="image/1.png" style="display: none;">
+    <img id="image2" src="image/2.png" style="display: none;">
+    <img id="image3" src="image/3.png" style="display: none;">
+    <img id="image4" src="image/4.png" style="display: none;">
+    <img id="image5" src="image/5.png" style="display: none;">
+    <img id="image6" src="image/6.png" style="display: none;">
+
+    <script id="vertexShader" type="not-js">
+      attribute vec3 vPosition;
+      attribute vec3 vNormal;
+      attribute vec3 vColor;
+      attribute vec2 vTexCoord;
+      varying vec3 fPosition;
+      varying vec3 fColor;
+      varying vec3 fNormal;
+      varying vec2 fTexCoord;
+      uniform mat4 uMV;
+      uniform mat4 uMVP;
+
+      void main(void) {
+        gl_Position = uMVP * vec4(vPosition, 1.0);
+        fPosition = (uMV * vec4(vPosition, 1.0)).xyz; // In camera coordinates
+        fColor = vColor;
+        fNormal = vNormal;                            // In local coordinates
+        fTexCoord = vTexCoord;
+     }
+    </script>
+
+    <script id="fragmentShader" type="not-js">
+      precision highp float;
+      varying vec3 fPosition;
+      varying vec3 fColor;
+      varying vec3 fNormal;
+      varying vec2 fTexCoord;
+      uniform mat4 uMV;
+      uniform mat3 uMVn;
+
+      uniform sampler2D texSamplerFront;
+      uniform sampler2D texSamplerBack;
+      uniform sampler2D texSamplerLeft;
+      uniform sampler2D texSamplerRight;
+      uniform sampler2D texSamplerTop;
+      uniform sampler2D texSamplerBottom;
+
+      const vec3  lightV    = vec3(0.0,-0.3,1.0);
+      const float lightI    = 2.0;               // only for diffuse component
+      const float ambientC  = 0.6;
+      const float diffuseC  = 0.3;
+      const float specularC = 0.6;
+      const float specularE = 32.0;
+      const vec3  lightCol  = vec3(1.0,1.0,1.0);
+      const vec3  objectCol = vec3(1.0,0.6,0.0); // yellow-ish orange
+      vec2 blinnPhongDir(vec3 lightDir, vec3 n, float lightInt, float Ka,
+        float Kd, float Ks, float shininess) {
+        vec3 s = normalize(lightDir);
+        vec3 v = normalize(-fPosition);
+        vec3 h = normalize(v+s);
+        float diffuse = Ka + Kd * lightInt * max(0.0, dot(n, s));
+        float spec =  Ks * pow(max(0.0, dot(n,h)), shininess);
+        return vec2(diffuse, spec);
+      }
+
+      void main(void) {
+
+        vec3 texColor = vec3(0.0, 0.0, 0.0);
+
+            // Logic to select the correct texture based on fragment's normal
+        if (fNormal == vec3(1.0, 0.0, 0.0)) {
+            // Right face
+            texColor = texture2D(texSamplerRight, fTexCoord).xyz;
+        } else if (fNormal == vec3(-1.0, 0.0, 0.0)) {
+            // Left face
+            texColor = texture2D(texSamplerLeft, fTexCoord).xyz;
+        } else if (fNormal == vec3(0.0, 1.0, 0.0)) {
+            // Top face
+            texColor = texture2D(texSamplerTop, fTexCoord).xyz;
+        } else if (fNormal == vec3(0.0, -1.0, 0.0)) {
+            // Bottom face
+            texColor = texture2D(texSamplerBottom, fTexCoord).xyz;
+        } else if (fNormal == vec3(0.0, 0.0, 1.0)) {
+            // Front face
+            texColor = texture2D(texSamplerFront, fTexCoord).xyz;
+        } else if (fNormal == vec3(0.0, 0.0, -1.0)) {
+            // Back face
+            texColor = texture2D(texSamplerBack, fTexCoord).xyz;
+        }
+
+        vec3 n = normalize(uMVn * fNormal);
+        vec3 ColorS  = blinnPhongDir(lightV,n,0.0   ,0.0,     0.0,     specularC,specularE).y*lightCol;
+        vec3 ColorAD = blinnPhongDir(lightV,n,lightI,ambientC,diffuseC,0.0,      1.0      ).x*texColor;
+        gl_FragColor = vec4(ColorAD+ColorS,1.0);
+      }
+    </script>
+
+    <canvas id="mycanvas" width="500" height="500"></canvas>
+    <!-- <canvas id="mycanvas2" width="500" height="500"></canvas> -->
+    <br>
+    <input id="slider1" type="range" min="-100" max="100" />
+    <input id="slider2" type="range" min="-100" max="100" />
+    <a href="./index2.html" class="button">Cube Example</a>
+
+    <!-- <button id="randomizeButton">Randomize Sliders</button> -->
+    <script type="text/javascript" src="gl-matrix-min.js"></script>
+    <!-- <script type="text/javascript" src="gl-matrix-min.js"></script> -->
+    
+    <script src="js.js" id="module"></script>
+    
+    
+  </body>
+</html>

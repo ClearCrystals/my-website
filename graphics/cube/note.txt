@@ -1,0 +1,3 @@
+You should see dice. Please open this project using the live preview extension in VS CODE. Images might not have the right permissions (The image element contains cross-origin data error) when clicking on the index.html that opens on chrome tab. Therefore if you open it in VS code you can ignore all the permissions to view file and all the images should load. If I had a domain I could easily fix this problem but I don't so please grade using VS Code Extension.
+GRACE STEINMETZ, Dec 3, 2023 at 11:59pm
+Hi Grace, thanks for the comment. For future reference (or just for personal use), you can also use "python -m http.server" in console if you have python installed and it will spin up a local web server for you (and that's how I graded this assignment). Great work!

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Night Scene</title>
+</head>
+<body>
+    <div class="planets"></div>
+    <canvas id="canvas"></canvas>
+    <div class="controls">
+<!--
+        <label for="elevator1Slider">Elevator 1 Height:</label>
+        <input id="elevator1Slider" type="range" min="0" max="200" value="0">
+        <label for="elevator2Slider">Elevator 2 Height:</label>
+        <input id="elevator2Slider" type="range" min="0" max="200" value="0">
+        
+-->
+        <label for="sunSliderX">Continuously speed up animation:</label>
+        <input type="range" id="sunSliderX" min="0" max="20" step="1" value="0">
+        <br>
+<!--
+        <label for="sunSliderY">Sun Y:</label>
+        <input type="range" id="sunSliderY" min="-200" max="200" step="1" value="0">
+-->
+    </div>
+    <div class="stars"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

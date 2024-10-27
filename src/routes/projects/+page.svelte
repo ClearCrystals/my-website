@@ -58,19 +58,19 @@
     <div class="overlay">Games</div>
   </a>
   
-  <a href="https://example.com/graphics" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">
+  <a href="/graphics" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">
     <img src="/image2.png" alt="Project 2" draggable="false" class="w-[300px] h-[500px] object-cover">
     <div class="overlay">Graphics</div>
   </a>
   
-  <a href="https://example.com/3d-printing" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">
+  <a href="/printing" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">
     <img src="/image3.jpg" alt="Project 3" draggable="false" class="w-[300px] h-[500px] object-cover">
     <div class="overlay">3D Printing</div>
   </a>
   
-  <a href="https://example.com/other" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">
+  <a href="/activities" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">
     <img src="/image4.jpg" alt="Project 4" draggable="false" class="w-[300px] h-[500px] object-cover">
-    <div class="overlay">Other</div>
+    <div class="overlay">Extracurricular Activities</div>
   </a>
   
   <a href="http://www.codecsclub.com.s3-website.us-east-2.amazonaws.com/index.html" class="flex-none relative transform transition-transform duration-[300ms] ease-linear hover:scale-105" draggable="false">

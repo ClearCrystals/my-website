@@ -71,27 +71,28 @@
         <h3 class="text-2xl mb-2">Devops Software Engineer - Extreme Engineering Solutions</h3>
         <p class="text-lg">July 2021 - Present</p>
         <p class="leading-relaxed mt-2">
-          I lead the development and deployment of scalable cloud infrastructure and applications. I also mentor junior developers and contribute to architecture design for key projects.
+          Led the development of an Automated Phase Gate Linter, which compiled API-requested json data into a structured json format. <br><br>This initiative significantly increased productivity across other software engineering teams by streamlining processes and reducing manual effort. <br><br>
+Implemented unit tests for an Analytics Generator, enhancing the atomicity of the code and creating a reusable foundation for multiple future scheduled projects. <br><br>This effort improved code reliability and facilitated more efficient project development.
         </p>
       </div>
 
-      <!-- Job 2 -->
+      <!-- Job 2
       <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
         <h3 class="text-2xl mb-2">Software Engineer at ABC Inc</h3>
         <p class="text-lg">Feb 2018 - Dec 2020</p>
         <p class="leading-relaxed mt-2">
           As part of the full-stack development team, I built web applications and implemented CI/CD pipelines, enhancing software deployment efficiency by 40%.
         </p>
-      </div>
+      </div> -->
 
-      <!-- Job 3 -->
+      <!-- Job 3
       <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
         <h3 class="text-2xl mb-2">Junior Developer at DEF Solutions</h3>
         <p class="text-lg">Jun 2016 - Jan 2018</p>
         <p class="leading-relaxed mt-2">
           I started my career working on small internal applications while honing my skills in frontend and backend development, as well as building a solid understanding of DevOps practices.
         </p>
-      </div>
+      </div> -->
     </div>
   </section>
 

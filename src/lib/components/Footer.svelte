@@ -14,7 +14,7 @@
         <li><a href="/projects" class="text-gray-400 hover:text-white">Projects</a></li>
         <li><a href="/games" class="text-gray-400 hover:text-white">Games</a></li>
         <li><a href="/graphics" class="text-gray-400 hover:text-white">Graphics</a></li>
-        <li><a href="/activies" class="text-gray-400 hover:text-white">Activities</a></li>
+        <li><a href="/activities" class="text-gray-400 hover:text-white">Activities</a></li>
       </ul>
     </div>
 

@@ -3,7 +3,7 @@
     const games = [
       { name: "Space Rocket", image: "/SpaceRocket.PNG", link: "/games/spacerocket/SpaceRocket.html" },
       { name: "Space Glitch", image: "/SpaceGlitch.PNG", link: "/games/spaceglitch/SpaceGlitch.html" },
-      { name: "Enigma of Willow Park", image: "/EnigmaOfWillowPark.PNG", link: "/games/enigmaofwillowpark/enigmaofwillowpark.html" },
+      { name: "Enigma of Willow Park", image: "/EnigmaOfWillowPark.PNG", link: "/games/enigmaofwillowpark/TheEnigmaofWillowPark.html" },
       { name: "Click Shooter", image: "/ClickShooter.PNG", link: "/games/clickshooter/clickshooter.html" },
     //   { name: "Game 5", image: "/image1.jpg", link: "/game5" },
     //   { name: "Game 6", image: "/image2.png", link: "/game6" }

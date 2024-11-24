@@ -1,12 +1,17 @@
-import adapter from '@sveltejs/adapter-auto';
-import sveltePreprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-static';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter(),
-  },
-  preprocess: sveltePreprocess(),
+    adapter: adapter({
+      pages: 'build', // Output directory for static files
+      assets: 'build',
+      fallback: null // Use `index.html` as fallback for SPA
+    }),
+    paths: {
+      base: '',
+      assets: ''
+    }
+  }
 };
 
 export default config;
